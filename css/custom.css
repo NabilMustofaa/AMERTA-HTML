@@ -378,7 +378,9 @@ footer .wave#wave4{
 
 }
 @media screen and (max-width: 768px){
-
+    section#home .pt-0{
+        padding-top: 10% !important;
+    }
     .card .box:hover{
         transform: translateY(-35px);
     }
