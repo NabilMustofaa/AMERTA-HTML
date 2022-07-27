@@ -316,6 +316,18 @@ footer .wave#wave2{
     bottom: 10px;
     animation: animateWave_02 4s linear infinite;
 }
+footer .wave#wave3{
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animateWave_03 4s linear infinite;
+}
+footer .wave#wave4{
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animateWave_04 4s linear infinite;
+}
 .footer-link{
     position: relative;
     width: 100%;
@@ -342,6 +354,23 @@ footer .wave#wave2{
 @keyframes animateWave_02 {
     0% {
         background-position-x:0px ;
+    }
+    100% {
+        background-position-x:1000px ;
+    }
+
+}
+@keyframes animateWave_03 {
+    0% {
+        background-position-x:1000px ;
+    }
+    100% {
+        background-position-x:400px ;
+    }
+}
+@keyframes animateWave_04 {
+    0% {
+        background-position-x:400px ;
     }
     100% {
         background-position-x:1000px ;
