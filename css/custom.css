@@ -409,8 +409,11 @@ footer .wave#wave4{
         position: relative;
         top: 0; 
     }
-    iframe{
-        height: 50%;
+    .video-container{
+        padding-bottom: 25%;
+    }
+    .work-text{
+        min-width: fit-content;
     }
     
 }
