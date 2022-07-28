@@ -15,6 +15,9 @@
 .margin-10{
     margin: 10% 0;
 }
+.p-5{
+    padding: 5% 0;
+}
 .padding-10{
     padding: 10% 0;
 }
@@ -45,8 +48,8 @@
 }
 
 img.logo{
-    width: 256px;
-    height: 256px;
+    height: 100%;
+    width: 100%;
 }
 .flex{
     display: flex;
@@ -99,6 +102,10 @@ img.logo{
 
 .text-dibalik{
     margin-right: 30%;
+}
+.center-logo{
+    display: flex;
+    margin:0 auto;
 }
 
 /*-- Card --*/
@@ -378,8 +385,8 @@ footer .wave#wave4{
 
 }
 @media screen and (max-width: 768px){
-    section#home .pt-0{
-        padding-top: 10% !important;
+    .p-5{
+        padding: 5%;
     }
     .card .box:hover{
         transform: translateY(-35px);
@@ -388,10 +395,13 @@ footer .wave#wave4{
         display: block !important;
     }
     .section{
-        margin: 50px 0;
+        margin: 100px 0;
     }
     section#home .row{
-        flex-direction: column;
+        flex-direction: column-reverse;
+    }
+    section#home{
+        padding-top: 20%;
     }
     .flex-end{
         justify-content: center;
@@ -399,10 +409,6 @@ footer .wave#wave4{
     }
     section#penugasan .flex{
         flex-direction: column;
-    }
-    section#home{
-        display: block;
-        margin: 10% 0;
     }
     section#timeline{
         display: block;

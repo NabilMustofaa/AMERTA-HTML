@@ -867,7 +867,7 @@ nav.navbar.bootsnav li.dropdown ul li {
 }
 
 .work-item:hover .text-large {
-    color: #00abc9;
+    color: #D1A409;
 }
 
 .work-image {
@@ -985,7 +985,7 @@ nav.navbar.bootsnav li.dropdown ul li {
 
 @media screen and (max-width: 1280px) {
     header .menu-logo-center .navbar-nav > li > a {
-        margin: 0 20px;
+        margin: 0 auto;
     }
 }
 

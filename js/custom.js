@@ -34,8 +34,8 @@ jQuery(function ($) {
         
         $('section').each(function() { //for each loop(chcecks for every element with that class)
         //for your every section on site or your class of main sections you are targetting
-            var target = $(this).offset().top-10;//each element position from top
-            var targetBot = target + $(this).height()+100//each element position from top + height of element
+            var target = $(this).offset().top-200;//each element position from top
+            var targetBot = target + $(this).height()//each element position from top + height of element
             var id = $(this).attr('id');//this element ID - should be same as data-id on your nav link
             $('.navbar-nav li#'+id+'_nav').removeClass('active'); //clearing
             if (position >= target && targetBot >= position) { //if you are scrolled over element with some id 
