@@ -26,13 +26,13 @@
             <div class="container nav-header-container">
                 <div class="row">
                     <!-- start logo -->
-                    <div class="center-logo">
+                    <div class="center-logo hidden">
                         <img src="images/logo.png" alt="Amerta" height="16">
                     </div>
                     <!-- end logo -->
                     <div class="col-md-12 col-sm-12 col-xs-12 accordion-menu m-0">
-                        <div class="navbar-collapse collapse no-padding-right">
-                            <ul class="nav navbar-nav navbar-left text-right no-margin alt-font text-normal width-40 sm-width-100 sm-text-left hidden-sm hidden-xs" data-in="fadeIn" data-out="fadeOut">
+                        <div class="navbar-collapse collapse no-padding-right flex justify-content-between">
+                            <ul class="nav navbar-nav navbar-left text-right no-margin alt-font text-normal flex width-40 sm-wid th-100 sm-text-left hidden-sm hidden-xs justify-content-between" data-in="fadeIn" data-out="fadeOut">
                                 <li id="home_nav" class="active">
                                     <a href="#home" class="scroll">Home</a>
                                 </li>
@@ -45,19 +45,33 @@
                                 <li id="timeline_nav">
                                     <a href="#timeline" class="scroll">Timeline</a>
                                 </li>
+                                <li id="">
+                                    <a href="#lorem" class="scroll">Lorem</a>
+                                </li>
                             </ul>
-                            <ul class="nav navbar-nav navbar-right no-margin alt-font text-normal width-40 sm-width-100 hidden-sm hidden-xs" data-in="fadeIn" data-out="fadeOut">
-                                <li id="teaser_nav">
-                                    <a href="#teaser" class="scroll">Tentang</a>
+                            <!-- start logo -->
+                            <div class="nav navbar-nav nav-logo alt-font text-normal width-20 flex flex-center" data-in="fadeIn" data-out="fadeOut">
+                                <div class="center-logo">
+                                    <img src="images/logo.png" alt="Amerta" height="16">
+                                </div>
+                            </div>
+                            
+                            <!-- end logo -->
+                            <ul class="nav navbar-nav navbar-right no-margin alt-font text-normal flex justify-content-between width-40 sm-width-100 hidden-sm hidden-xs" data-in="fadeIn" data-out="fadeOut">
+                                <li id="denah_nav">
+                                    <a href="#denah" class="scroll">Denah</a>
                                 </li>
                                 <li id="teaser_nav">
                                     <a href="#teaser" class="scroll">Video</a>
                                 </li>
-                                <li id="denah_nav">
-                                    <a href="#denah" class="scroll">Denah</a>
-                                </li>
                                 <li id="penugasan_nav">
                                     <a href="#penugasan" class="scroll">Penugasan</a>
+                                </li>
+                                <li id="">
+                                    <a href="/" class="scroll">Absensi</a>
+                                </li>
+                                <li id="tentang_nav">
+                                    <a href="#tentang" class="scroll">Tentang</a>
                                 </li>
                             </ul>
                         </div>
@@ -93,8 +107,6 @@
                                     <a href="#teaser" class="scroll"> <span>07.</span>Video</a>
                                 </li>
                             </ul>
-    
-                            <p class="push-bottom text-white text-small">Boltex 2018 Made With Love By Theme Industry</p>
                         </nav>
                     </div>
                 </div>
@@ -105,21 +117,22 @@
     <!-- end header -->
     <!---About Section-->
     <section id="home">
-        <div class="container p-5" data-aos="fade-up" data-aos-delay="400">
+        <div class="container p-5" data-aos-delay="400">
             <div class="row">
-                <div class="flex flex-col flex-center col-md-6 p-5 text-center">
+                <div class="flex flex-col flex-center col-md-6 p-5 text-center" data-aos="fade-right">
                     <h1><strong>AMERTA </strong>2022</h1>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima quas nisi pariatur unde adipisci aut veritatis placeat sequi harum
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima quas nisi pariatur unde adipisci aut veritatis placeat sequi harum doloremque, quisquam, quisquam. Quisquam, quisquam.</p>
+                    <a href="/" class="button">Cari Kelompok</a>
                 </div>
-                <div class="col-md-6 flex flex-end p-5 pt-0">
-                    <img class="logo" src="images/Logo Big2.png" alt="">
+                <div class="col-md-6 flex flex-end p-5 pt-0 logo-home" data-aos="fade-left">
+                    <img class="logo" src="images/Logo_Big3.png" alt="">
                 </div>
             </div>
         </div>
         
     </section>  
     <section id="dibalik">
-        <div class="container" data-aos="fade-left" data-aos-delay="400">
+        <div class="container padding-10" data-aos="fade-right" data-aos-delay="400">
             <div class="w-70 margin-0">
                 <h2><strong>Dibalik AMERTA </strong>2022</h2>
                 <p class="text-dibalik">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni libero labore, illum perferendis, fugiat aliquid dolore, dolorum distinctio exercitationem sed aperiam necessitatibus eum vel! Libero illo vero obcaecati vel molestias? Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste nihil voluptatum blanditiis, nobis dolorum velit debitis ut, aperiam aliquid, odio at recusandae tempore? Laborum illo tempora nam quod nesciunt ab.</p>
@@ -130,6 +143,9 @@
     <!---End About-->
     <!---Card Section-->
     <section id="ketentuan">
+        <div class="top-section text-center">
+            <h2><strong>Penugasan</strong></h2>
+        </div>
         <div class="container flex flex-center flex-wrap">
             <div class="card" data-aos="fade-up" data-aos-delay="400" >
                 <div class="box flex flex-center">
@@ -154,7 +170,7 @@
             <div class="card" data-aos="fade-up" data-aos-delay="1200" >
                 <div class="box flex flex-center">
                     <div class="content">
-                        <h2>01</h2>
+                        <h2>03</h2>
                         <h3>Ragam Amerta</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.</p>
                         <a href="">Check Here</a>
@@ -165,12 +181,13 @@
         
     </section>
 <!-- End Card -->
+
 <!-- Timeline Section-->
 <section id="timeline">
     <div class="time" data-aos="fade-in">
         <div class="container" >
             <div class="top-section text-center">
-                <h2>Lorem Ipsum</h2>
+                <h2><strong>Timeline</strong></h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus vero sint vitae quam rerum! Culpa ipsam tenetur iure, amet facilis, corrupti reiciendis ipsa error, ducimus voluptas ab sunt voluptatum asperiores.</p>
             </div>
             <div class="timeline">
@@ -207,10 +224,8 @@
     <div class="container p-10" >
         <div class="row">
             <!-- title section -->
-            <div class="col-lg-9 col-md-10 col-sm-12 text-center center-col">
-                <div class="area-heading text-center">
-                    <h2>Lorem Ipsum</h2>
-                </div>
+            <div class="text-center">
+                <h2><strong>Lorem Ipsum</strong></h2>
             </div>
         </div>
         <div class="flex" data-aos="fade-up" data-aos-delay="400">
@@ -275,7 +290,9 @@
 <!-- start denah-->
 <section id="denah">
     <div class="container p-20" data-aos="zoom-in-up">
-        <h2 class="text-center">Denah</h2>
+        <div class="text-center">
+            <h2><strong>Denah</strong></h2>
+        </div>
         <div class="denah-container flex" style="background-color: grey;">
         a
         </div>
@@ -286,7 +303,10 @@
 
 <section id="teaser">
     <div class="container padding-10 pt-0">
-        <div class="parallax height-70" data-aos="zoom-in-up">
+        <div class="text-center">
+            <h2><strong>Teaser Video Amerta</strong></h2>
+        </div>
+        <div class="parallax height-50" data-aos="zoom-in-up">
             <iframe width="560" height="349" src="http://www.youtube.com/embed/n_dZNLr2cME?rel=0&hd=1" frameborder="0" allowfullscreen onplay="videoPlay()" id="play"></iframe>
             <!-- <div class="container">
                 <div class="row">
@@ -318,7 +338,7 @@
             <li><a href="#denah">Denah</a></li>
             <li><a href="#">Tentang Website</a></li>
         </ul>
-        <p class="text-white">@2020 All right reserved.</p>
+        <p class="text-white">@2022 All right reserved.</p>
     </div>
 </footer>
 

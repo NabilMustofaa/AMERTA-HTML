@@ -98,7 +98,7 @@ ul, ol, dl {list-style-position: outside; margin-bottom: 25px;list-style-type: n
 
 /*   Custom */
 .center-col {float:none; margin-left:auto; margin-right:auto }
-section {padding: 140px 0; overflow: hidden;}
+section {padding: 120px 0; overflow: hidden;}
 section.big-section {padding:160px 0;}
 section.extra-big-section {padding:200px 0;}
 section.half-section {padding:80px 0;}
@@ -713,7 +713,7 @@ header nav {width: 100%; top: 0px; z-index: 99; margin-bottom: 0; display: table
 header nav .nav-header-container {display: table-cell; vertical-align: middle; position: relative;}
 header nav .navbar-nav > li > a {font-size: 14px; font-weight: 400; margin:0 20px; padding: 5px 0px 5px; letter-spacing: 0.015em;}
 header nav .navbar-nav > li > a:hover, header nav .navbar-nav > li > a:focus, header nav .navbar-nav > li.active > a {background: transparent;}
-header nav .navbar-nav > li:last-child a { margin-right: 0;}
+/* header nav .navbar-nav > li:last-child a { margin-right: 0;} */
 .navbar-fixed-bottom, .navbar-fixed-top {z-index: 99}
 .header nav .navbar-nav.text-normal > li > a {font-weight: 600; font-size: 12px }
 .navbar-nav > li { position: inherit;}
@@ -736,9 +736,15 @@ header nav .navbar-nav.navbar-center > li:last-child a {margin-right: 20px;}
 .social-icon a:last-child {margin-right: 0;}
 .menu-logo-center .navbar-left>li {float: left;display: inline-block;vertical-align: middle;
 }
-header .menu-logo-center .navbar-nav > li > a{margin: 0 30px;}
-header .menu-logo-center .navbar-nav > li:last-child a{
+header .menu-logo-center .navbar-nav > li > a{margin: 0 16px;}
+/* header .menu-logo-center .navbar-nav > li:last-child a{
     margin: 0 30px;
+} */
+.menu-logo-center .navbar-right{
+    padding-left: 0 !important;
+}
+.menu-logo-center .navbar-left{
+    padding-right: 0 !important;
 }
 .menu-logo-center .navbar-right>li{
     float: right;
@@ -749,14 +755,14 @@ header nav.nav-center-logo .row {display: block;}
 header nav.nav-center-logo .row > div:first-child {flex: none;}
 .nav-center-logo .navbar-nav > li {float: none; display: inline-block; vertical-align: middle;}
 .nav-center-logo .navbar-nav > li > a {display: flex}
-.nav-center-logo .navbar-left { margin-left: -15px;}
+.nav-center-logo .navbar-left { margin-left: -15px; justify-self: flex-start;}
 .nav-center-logo .navbar-left li:first-child a { margin-left: 0;}
 nav.nav-center-logo.navbar.bootsnav li.dropdown ul.dropdown-menu,nav.bootsnav.brand-center ul.nav > li.dropdown > ul.dropdown-menu {margin-top: 0px;}
-.center-logo {left: 52%; position: absolute; margin-top: -14px; text-align: center; transform: translateX(-50%); z-index: 1; height: 30px;}
+.center-logo {text-align: center; margin: auto 0; z-index: 1; height: 28px; width: fit-content; }
 nav.navbar.bootsnav ul.navbar-right li.dropdown ul.dropdown-menu li a {text-align: left }
 header nav.navbar-fixed .nav-header-container {width: 100%; float: left;}
 
-header .menu-logo-center .navbar-nav > li.social-links {padding: 26px 0;}
+header .menu-logo-center .navbar-nav > li.social-links {padding: 20px 0;}
 header.sticky .menu-logo-center .navbar-nav > li.social-links {padding: 20px 0;}
 
 /* top logo */

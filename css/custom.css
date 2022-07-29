@@ -46,9 +46,16 @@
 .height-70{
     height: 70vh;
 }
-
+.height-50{
+    height: 50vh;
+}
+section#home{
+    height: 100vh;
+}
+section#dibalik{
+    height: 100vh;
+}
 img.logo{
-    height: 100%;
     width: 100%;
 }
 .flex{
@@ -94,7 +101,10 @@ img.logo{
     display: block;
 }
 .width-40{
-    width: 45%;
+    width: 43%;
+}
+.width-20{
+    width: 14%;
 }
 .m-0{
     margin: 0 !important;
@@ -103,11 +113,30 @@ img.logo{
 .text-dibalik{
     margin-right: 30%;
 }
+header.sticky nav.navbar .nav-header-container .row .col-md-12 .navbar-collapse .nav-logo{
+    padding: 12px 0;
+} 
+.nav-logo{
+    padding: 16px 0;
+}
 .center-logo{
     display: flex;
     margin:0 auto;
 }
-
+.logo-home{
+    margin-top: -5%;
+    margin-right: -5%; ;
+}
+.button{
+    position: relative;
+    padding: 8px 20px;
+    background-color: #0C4A83;
+    margin-top: 15px;
+    border-radius: 20px;
+    color: #fff;
+    font-weight: 400;
+    box-shadow: 0 10px 20px rgba(0, 0,0, 0.2);
+}
 /*-- Card --*/
 .card{
     position: relative;
@@ -192,6 +221,7 @@ img.logo{
     text-align: center;
     max-width: 600px;
     margin: 50px auto;
+    margin-top: 0 !important;
 }
 .timeline{
     position: relative;
@@ -390,6 +420,12 @@ footer .wave#wave4{
     }
     .card .box:hover{
         transform: translateY(-35px);
+    }
+    .navbar-collapse{
+        display: none;
+    }
+    .nav-logo {
+        display: none;
     }
     .hidden{
         display: block !important;
