@@ -72,12 +72,11 @@ function closeModal(){
 }
 $(window).on('scroll',() => {
     let mouse = document.querySelector('.mouse');
-    mouse.classList.toggle('hide-mouse');
+    mouse.classList.add('hide-mouse');
     setTimeout(() => {
         mouse.classList.remove('hide-mouse');
-    },500);
+    },500)
 })
-    
 
 
 
