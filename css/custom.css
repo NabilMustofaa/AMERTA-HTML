@@ -110,8 +110,38 @@ img.logo{
     margin: 0 !important;
 }
 
-.text-dibalik{
+section#home .container .row .flex h1,
+section#home .container .row .flex p{
+    width: 63%;
+    text-align: justify;
+}
+section#home .container .row .flex h1{
+    font-size:5rem;
+    font-weight: 400;
+    letter-spacing: 0.08em;
+}
+section#home .container .row .flex h1 strong{
+    font-weight: 700;
+    letter-spacing: 0.08em;
+}
+section#home .container .row .flex p{
+    font-weight: 400;
+    font-size: 2.25rem;
+}
+section#home .container .row .flex div{
+    width: 65%;
+    margin-top: 1rem;
+}
+section#home .container .row .flex div button{
+    width: fit-content;
+    margin: 0 auto;
+}
+.container-dibalik{
     margin-right: 30%;
+}
+.text-dibalik{
+    
+    text-align: justify;
 }
 header.sticky nav.navbar .nav-header-container .row .col-md-12 .navbar-collapse .nav-logo{
     padding: 12px 0;
@@ -127,16 +157,44 @@ header.sticky nav.navbar .nav-header-container .row .col-md-12 .navbar-collapse 
     margin-top: -5%;
     margin-right: -5%; ;
 }
-.button{
+.button-home{ 
     position: relative;
-    padding: 8px 20px;
-    background-color: #0C4A83;
-    margin-top: 15px;
-    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    border: none;
+    padding: 12px 20px;
+    background: none;
     color: #fff;
-    font-weight: 400;
-    box-shadow: 0 10px 20px rgba(0, 0,0, 0.2);
 }
+
+.button-home:before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%)translateX(calc(100% + +4px));
+    width: 45px;
+    height: 40px;
+    background-color: #0C4A83;
+    border-radius: 20px;
+    transition: transform 0.25s 0.25s cubic-bezier(0, 0, 0.5, 2), width 0.25s 0.25s cubic-bezier(0, 0, 0.5, 2);
+   
+}
+.button-home:hover::before{
+    width: 100%;
+    transform: translateY(-50%)translateX(-18px);
+    transition: transform 0.25s 0.25s cubic-bezier(0, 0, 0.5, 2), width 0.25s 0.25s cubic-bezier(0, 0, 0.5, 2);
+    z-index: -1;
+}
+.button-home i{
+    margin-left: -40px;
+    transition: transform 0.25s 4s cubic-bezier(0, 0, 0.5, 2);
+    z-index: 1;
+}
+.button-home:hover i{
+    margin-left: 10px;
+    transform: translateX(3px);
+}
+
 /*-- Card --*/
 .card{
     position: relative;
@@ -420,6 +478,61 @@ footer .wave#wave4{
     text-align: center;
 }
 
+.social_icons li a{
+    position: relative;
+    display:block;
+    width: 60px;
+    height: 60px;
+    color: #555;
+    background: #fff;
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+    box-shadow: -20px 20px 10px rgb(0 0 0 /50%);
+    transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(0,0);
+}
+.social_icons li a::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -20px;
+    height: 100%;
+    width: 20px;
+    background: #b2b2b2;
+    transition: 0.5s;
+    transform: rotate(0deg);
+}
+.social_icons li a::before{
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 0px;
+    width: 100%;
+    height: 20px;
+    background: #e5e5e5;
+    transition: 0.5s;
+    transform: rotate(0deg);
+    
+}
+.social_icons li a:hover{
+    transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(20px,-20px);
+    box-shadow: -50px 50px 50px rgb(0,0,0,0.5);
+}
+.social_icons li:hover .fa{
+    color: #fff;
+}
+.social_icons li:hover:nth-child(1) a{
+    background-color: #3b5999;
+}
+.social_icons li:hover:nth-child(1) a::before{
+    background-color: #2f477a;
+}
+.social_icons li:hover:nth-child(1) a::after{
+    background-color: #4e69a3;
+}
+
 @keyframes animateWave {
     0% {
         background-position-x:1000px ;
@@ -474,10 +587,22 @@ footer .wave#wave4{
         margin: 100px 0;
     }
     section#home .row{
+        justify-content: center;
+        align-items: center;
         flex-direction: column-reverse;
+        margin: 0 auto;
     }
+    section#home .container .row .flex{
+        justify-content: center;
+        align-items: center;
+    }
+    section#home .container .row .flex h1,
+    section#home .container .row .flex p{
+    width: 100%;
+    text-align: center;
+}   
     section#home{
-        padding-top: 20%;
+        padding-top: 30%;
     }
     .flex-end{
         justify-content: center;
