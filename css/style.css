@@ -53,7 +53,7 @@ Google Font
 /* ===================================
     Google font
 ====================================== */
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700');
 
 /* ===================================
@@ -63,11 +63,11 @@ Google Font
 /* font family */
 
 .alt-font {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .main-font {
-    font-family:'Open Sans', sans-serif;
+    font-family:'Poppins', sans-serif;
 }
 
 
@@ -357,7 +357,7 @@ h1,p,h2,body{
     text-transform: capitalize;
     padding-left: 0;
     font-weight: 300;
-    font-family: 'Raleway', sans-serif;
+    font-family:'Poppins', sans-serif;
 }
 
 .pushmenu .push_nav > li > a,.header-appear .pushmenu .push_nav > li > a {
@@ -637,7 +637,7 @@ nav.navbar.bootsnav li.dropdown ul li {
     padding-left: 0;
     font-weight: 300;
     color: #fff;
-    font-family: 'Raleway', sans-serif;
+    font-family:'Poppins', sans-serif;
 }
 .sidebar_menu .dropdown:hover .dropdown-content {
     display: inline-block;

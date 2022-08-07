@@ -17,6 +17,10 @@
     <link rel="stylesheet" href="css/custom.css"/>
     <!-- AOS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
+    />
 </head>
 <body>
     <!-- start header -->
@@ -134,17 +138,17 @@
         </div>
     </section>  
     <section id="dibalik">
-        <div class="container padding-10" data-aos="fade-right" data-aos-delay="400">
+        <div class="container p-5" data-aos="fade-right" data-aos-delay="400">
             <div class="w-70 margin-0">
                 <h2><strong>Dibalik AMERTA </strong>2022</h2>
                 <div class="container-dibalik">
                     <p class="text-dibalik">BEM berfungsi sebagai organisasi yang mewadahi kreativitas mahasiswa dan membantu dalam pengembangan soft skill. Dalam upaya mencapai tujuan tersebut, maka dibentuk agenda “Amerta” (Angkatan Muda Ksatria Airlangga 2022) Amerta merupakan salah satu proker BEM UNAIR yang dilaksanakan gerbang awal pengenalan kehidupan organisasi mahasiswa, softskill managerial, kepemimpinan, dan perencanaan proker yang akan dijalankan selama satu periode kepengurusan. Amerta 2022 bertujuan untuk :</p>
-                    <div class="flex flex-col">
-                        <span>1. Mengenalkan mahasiswa baru kepada lingkungan serta mekanisme yang berlaku di Universitas Airlangga; </span>
-                        <span>2. Menumbuhkan rasa bangga terhadap almamater dan tanah air; </span>
-                        <span>3. Membina kebersamaan, solidaritas, dan kekeluargaan di antara mahasiswa baru; </span> 
-                        <span>4. Memberikan pembekalan terhadap mahasiswa baru tentang Organisasi Mahasiswa di Universitas Airlangga. </span>
-                    </div>
+                    <ul >
+                        <li>Mengenalkan mahasiswa baru kepada lingkungan serta mekanisme yang berlaku di Universitas Airlangga</li>
+                        <li>Menumbuhkan rasa bangga terhadap almamater dan tanah air</li>
+                        <li>Membina kebersamaan, solidaritas, dan kekeluargaan di antara mahasiswa baru</li>
+                        <li>Memberikan pembekalan terhadap mahasiswa baru tentang Organisasi Mahasiswa di Universitas Airlangga</li>
+                    </ul>
                 </div>
                 
             </div>
@@ -164,7 +168,7 @@
                         <h2>01</h2>
                         <h3>SOP</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.</p>
-                        <a href="">Check Here</a>
+                        <button onclick="openModal('attribut')">Check Here</button>
                     </div>
                 </div>
             </div>
@@ -184,7 +188,7 @@
                         <h2>03</h2>
                         <h3>Ragam Amerta</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.</p>
-                        <a href="">Check Here</a>
+                        <button onclick="openModal('attribut')">Check Here</button>
                     </div>
                 </div>
             </div>
@@ -251,7 +255,7 @@
                                 <div class="text-large text-extra-dark-gray font-weight-500 margin-20px-bottom">Interior
                                     Project
                                 </div>
-                                <p class="no-margin text-small text-dark-gray">simply dummy text of the printing and typesetting industry.
+                                <p class="no-margin text-small text-dark-gray text-justify">simply dummy text of the printing and typesetting industry.
                                     Lorem Ipsum has been the industrysimply dummy text.</p>
                             </div>
                         </div>
@@ -269,7 +273,7 @@
                                 <div class="text-large text-extra-dark-gray font-weight-500 margin-20px-bottom">Interior
                                     Project
                                 </div>
-                                <p class="no-margin text-small text-dark-gray">simply dummy text of the printing and typesetting industry.
+                                <p class="no-margin text-small text-dark-gray text-justify">simply dummy text of the printing and typesetting industry.
                                     Lorem Ipsum has been the industrysimply dummy text.</p>
                             </div>
                         </div>
@@ -287,7 +291,7 @@
                                 <div class="text-large text-extra-dark-gray font-weight-500 margin-20px-bottom">Interior
                                     Project
                                 </div>
-                                <p class="no-margin text-small text-dark-gray">simply dummy text of the printing and typesetting industry.
+                                <p class="no-margin text-small text-dark-gray text-justify">simply dummy text of the printing and typesetting industry.
                                     Lorem Ipsum has been the industrysimply dummy text.</p>
                             </div>
                         </div>
@@ -304,9 +308,9 @@
         <div class="text-center">
             <h2><strong>Denah</strong></h2>
         </div>
-        <div class="denah-container flex" style="background-color: grey;">
-        a
-        </div>
+        <a href="images/denah-besar.jpg" class="denah-container flex" data-fancybox="images" data-sizes="(max-width: 600px) 480px, 800px">
+            <img src="images/denah.svg" alt="">
+        </a>
     </div>
 </section>
 <!-- end denah-->
@@ -345,8 +349,8 @@
     </div>
 </div>
 
-<div class="container">
-    <ul class="social_icons">
+<div class="social-container">
+    <ul class="social-icons">
         <li><a class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
         <li><a href="#" class="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
         <li><a href="#" class="google"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
@@ -354,8 +358,12 @@
         <li><a href="#" class="instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
         <li><a href="#" class="pinterest"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
     </ul>
-
 </div>
+<div class="scroll-container">
+	<div class="field">
+        <div class="mouse"></div>
+    </div>
+</div>    
 
 <footer>
     <div class="waves">
@@ -382,7 +390,7 @@
 <script src="js/jquery-3.2.1.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery.appear.min.js"></script>
-<script src="js/jquery.fancybox.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
 <script src="js/custom.js"></script>
 <script src="js/timeline.js"></script>
 <script src="js/main2.js"></script>
