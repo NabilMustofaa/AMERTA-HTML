@@ -62,6 +62,14 @@ function opensidebar(){
     menubars.classList.toggle('active');
     pushmenu.classList.toggle('pushmenu-open');
 }
+function openModal(modalName){
+    let modal = document.querySelector('#modal_'+modalName);
+    modal.classList.toggle('show-modal');
+}
+function closeModal(){
+    let modal = document.querySelector('.show-modal');
+    modal.classList.toggle('show-modal');
+}
 
 
     
