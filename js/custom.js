@@ -70,13 +70,13 @@ function closeModal(){
     let modal = document.querySelector('.show-modal');
     modal.classList.toggle('show-modal');
 }
-$(window).on('scroll',() => {
-    let mouse = document.querySelector('.scroll-container');
-    mouse.classList.add('hide-mouse');
-    setTimeout(() => {
-        mouse.classList.remove('hide-mouse');
-    },2000)
-})
+// $(window).on('scroll',() => {
+//     let mouse = document.querySelector('.scroll-container');
+//     mouse.classList.add('hide-mouse');
+//     setTimeout(() => {
+//         mouse.classList.remove('hide-mouse');
+//     },2000)
+// })
 
 
 

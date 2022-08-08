@@ -369,8 +369,10 @@ header.sticky nav.navbar .nav-header-container .row .col-md-12 .navbar-collapse 
 }
 .denah-container{
     height: 50vh;
-    width: 70vw;
     margin: 20px auto;
+}
+.denah-img:hover{
+    transform: scale(1.2);
 }
 
 
@@ -519,7 +521,7 @@ footer .wave#wave4{
     position: absolute;
     top: 3px;
     left: -8px;
-    height: 100%;
+    height: 105%;
     width: 8px;
     background: #b2b2b2;
     transition: 0.5s;
@@ -541,22 +543,51 @@ footer .wave#wave4{
     transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(10px,-10px);
     box-shadow: -50px 50px 50px rgb(0,0,0,0.5);
 }
-.social-icons li:hover .fa{
+.social-icons li:hover .fa,
+.social-icons li:hover .fa-brands{
     color: #fff;
 }
 .social-icons li:hover:nth-child(1) a{
-    background-color: #3b5999;
+    background-color: #bc2a8d;
 }
 .social-icons li:hover:nth-child(1) a::before{
-    background-color: #2f477a;
+    background-color: #a24584;
 }
 .social-icons li:hover:nth-child(1) a::after{
-    background-color: #4e69a3;
+    background-color: #895579;
+}
+
+.social-icons li:hover:nth-child(2) a{
+    background-color: #341f1f;
+}
+.social-icons li:hover:nth-child(2) a::before{
+    background-color: #1b1616;
+}
+.social-icons li:hover:nth-child(2) a::after{
+    background-color: #010101;
+}
+.social-icons li:hover:nth-child(3) a{
+    background-color: #e62e2e;
+}
+.social-icons li:hover:nth-child(3) a::before{
+    background-color: #de2d2a;
+}
+.social-icons li:hover:nth-child(3) a::after{
+    background-color: #d92c29;
+}
+.social-icons li:hover:nth-child(4) a{
+    background-color: #1d9bf0;
+}
+.social-icons li:hover:nth-child(4) a::before{
+    background-color: #459cd6;
+}
+.social-icons li:hover:nth-child(4) a::after{
+    background-color: #6399bd;
 }
 .scroll-container{
     opacity: 1;
-    position: fixed;
-    bottom: 10px;
+    position: absolute;
+    bottom: 20px;
     left: calc(50% - 50px);
     z-index:2;
     width: 100px;
@@ -565,7 +596,9 @@ footer .wave#wave4{
     padding: 5px 0;
     border-radius: 3px;
 }
-
+.scroll-container:hover{
+    transform: scale(1.1);
+}
 .field{
     display: flex;
     flex-direction: column;
