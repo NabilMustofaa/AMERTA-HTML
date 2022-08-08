@@ -55,7 +55,11 @@ Google Font
 ====================================== */
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700');
-
+@font-face {
+    font-family:'Batik';
+    src: url('../fonts/Batik.ttf') format('truetype'),
+         url('../fonts/Batik.otf') format('opentype');
+  }
 /* ===================================
     Typography
 ====================================== */
@@ -65,10 +69,14 @@ Google Font
 .alt-font {
     font-family: 'Poppins', sans-serif;
 }
-
-.main-font {
-    font-family:'Poppins', sans-serif;
+.batik-font{
+    font-family: 'Batik';
 }
+.text-xxl{
+    font-size: 2.5rem;
+}
+
+
 
 
 .morphext > .animated {
