@@ -71,11 +71,11 @@ function closeModal(){
     modal.classList.toggle('show-modal');
 }
 $(window).on('scroll',() => {
-    let mouse = document.querySelector('.mouse');
+    let mouse = document.querySelector('.scroll-container');
     mouse.classList.add('hide-mouse');
     setTimeout(() => {
         mouse.classList.remove('hide-mouse');
-    },500)
+    },2000)
 })
 
 
