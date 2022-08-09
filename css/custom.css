@@ -115,7 +115,9 @@ img.logo{
 .m-0{
     margin: 0 !important;
 }
-
+ul.nav li a:hover{
+    color: #D1A409 !important;
+}
 section#home .container .row .flex h1,
 section#home .container .row .flex p{
     width: 63%;
@@ -497,7 +499,6 @@ footer{
     text-align: center;
     position: relative;
     bottom: 0;
-    z-index: -1;
 }
 
 footer .wave{
@@ -535,17 +536,23 @@ footer .wave#wave4{
     animation: animateWave_04 4s linear infinite;
 }
 .footer-link{
-    position: relative;
+    z-index: 1000;
     width: 100%;
     margin: 50px auto;
 }
 .footer-link a{
+    
     margin: 0 12px;
     font-size: 1.8rem;
     font-weight: 500;
     color: #ebf5fc;
     
-}.footer-link p{
+}
+.footer-link a:hover{
+    transform: scale(1.1);
+    color: #2e2503;
+}
+.footer-link p{
     text-align: center;
 }
 .social-container{
