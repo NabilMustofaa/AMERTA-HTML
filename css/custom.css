@@ -882,6 +882,10 @@ footer .wave#wave4{
     .video-container{
         height: 200px;
     }
+    .modal-container{
+        height: 95%;
+        margin-top: 10%;
+    }
     footer .container .flex{
         flex-direction: column;
     }
