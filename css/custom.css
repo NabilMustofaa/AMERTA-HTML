@@ -552,6 +552,7 @@ footer .wave#wave4{
     position: fixed;
     bottom: 10px;
     left: 10px;
+    z-index: 1000;
 }
 .social-icons li a{
     position: relative;
@@ -780,7 +781,7 @@ footer .wave#wave4{
         justify-content: center;
         align-items: center;
     }
-    section#penugasan .flex{
+    section#penugasan .flex.content{
         flex-direction: column;
     }
     section#timeline{
@@ -796,7 +797,7 @@ footer .wave#wave4{
     }
     
     .social-container{
-        transform: scale(0.5) !important;
+        transform: scale(0.7) !important;
         bottom: -20px;
         left: -20px;
     }
@@ -826,6 +827,10 @@ footer .wave#wave4{
         background-color: #0C4A83;
         border-radius: 50px;
     }
+    .img-dibalik{
+        display: none;
+    }
+
     
     
 }
@@ -876,5 +881,8 @@ footer .wave#wave4{
     }
     .video-container{
         height: 200px;
+    }
+    footer .container .flex{
+        flex-direction: column;
     }
 }
