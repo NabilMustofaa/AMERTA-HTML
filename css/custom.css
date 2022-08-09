@@ -225,7 +225,6 @@ header.sticky nav.navbar .nav-header-container .row .col-md-12 .navbar-collapse 
     
 }
 
-
 .button-home:before{
     content: "";
     position: absolute;
@@ -250,7 +249,6 @@ header.sticky nav.navbar .nav-header-container .row .col-md-12 .navbar-collapse 
     color: #fff;
 }
 .button-home:hover i{
-    
     transform: translateX(3px);
 }
 
@@ -753,23 +751,30 @@ footer .wave#wave4{
     .section{
         margin: 100px 0;
     }
-    section#home .row{
-        justify-content: center;
-        align-items: center;
-        flex-direction: column-reverse;
-        margin: 0 auto;
-    }
-    section#home .container .row .flex{
-        justify-content: center;
-        align-items: center;
-    }
     section#home .container .row .flex h1,
     section#home .container .row .flex p{
-    width: 100%;
-    text-align: center;
-}   
-    section#home{
-        padding-top: 30%;
+        width: 100%;
+        text-align: justify;
+    }
+    section#home .container .row .flex div{
+        width: 100%;
+        margin-top: 1rem;
+    }
+    .home h1.batik-font.first-letter{
+        font-size: 20rem !important; 
+        font-weight: 400 !important;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    .home h1.batik-font.second-letter{
+        font-size: 14rem !important;
+        font-weight: 400 !important;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        letter-spacing: 0 !important;
+        margin-left: -20px;
+    }
+    section#home .container .row .flex p{
+        font-weight: 400;
+        font-size: 2rem;
     }
     .flex-end{
         justify-content: center;
@@ -790,13 +795,86 @@ footer .wave#wave4{
         min-width: fit-content;
     }
     
+    .social-container{
+        transform: scale(0.5) !important;
+        bottom: -20px;
+        left: -20px;
+    }
+    h1.batik-font.first-letter{
+        font-size: 10rem !important; 
+        font-weight: 400 !important;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        margin-bottom: 8%;
+    }
+    h1.batik-font.second-letter{
+        font-size: 6rem !important;
+        font-weight: 400 !important;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        letter-spacing: 0 !important;
+        margin-right: 2%;
+    }
+    section#dibalik .container{
+        flex-direction: column;
+    }
+    .button-home:before{
+        content: none;
+    }
+    .button-home:hover::before{
+        content:none
+    }
+    .button-home{
+        background-color: #0C4A83;
+        border-radius: 50px;
+    }
+    
+    
 }
 @media screen and (max-width: 576px){
-
+    section#home .row{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+        margin: 0 auto;
+    }
+    section#home .container .row .flex{
+        justify-content: center;
+        align-items: center;
+    }
+    .scroll-container{
+        transform: scale(0.5) !important;
+    }
+    section#home .container .row .flex h1,
+    section#home .container .row .flex p{
+    width: 100%;
+    text-align: center;
+    }   
+    section#home{
+        padding-top: 30%;
+    }
+    .home {
+        display: none;
+    }
     .card .box:hover{
         transform: translateY(-35px);
     }
     .hidden{
         display: block !important;
+    }
+    section#denah .container .denah-section{
+        flex-direction: column;
+    }
+    .work-item{
+        display: flex;
+        flex-direction: column;
+    }
+    .col-xs-6{
+        width: 90%;
+        text-align: center;
+    }
+    .work-text{
+        margin-top: 20px;
+    }
+    .video-container{
+        height: 200px;
     }
 }
