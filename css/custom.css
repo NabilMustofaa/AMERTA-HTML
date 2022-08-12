@@ -58,6 +58,9 @@
 .height-50{
     height: 50vh;
 }
+.height-20{
+    height: 40%;
+}
 section#home{
     height: 100vh;
 }
@@ -490,7 +493,11 @@ video-play{
     color: #000000;
     cursor: pointer;
 }
-
+section#penugasan .container {
+    margin: 0;
+    width: 100vw;
+    padding: 2% 6%;
+}
 
 /*-- Footer --*/
 footer{
@@ -791,7 +798,7 @@ footer .wave#wave4{
         justify-content: center;
         align-items: center;
     }
-    section#penugasan .flex.content{
+    section#penugasan .flex.content-penugasan{
         flex-direction: column;
     }
     section#timeline{
@@ -889,6 +896,7 @@ footer .wave#wave4{
     .work-text{
         margin-top: 20px;
     }
+    
     .video-container{
         height: 200px;
     }
