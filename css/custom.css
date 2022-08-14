@@ -15,7 +15,9 @@
 }
 body{
     overflow: overlay;
-    background-image: url('../images/pattern.svg');
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),url('../images/pattern.svg');
+    background-repeat: repeat;
+    
 }
 section#denah,
 section#penugasan{
