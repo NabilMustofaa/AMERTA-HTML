@@ -1113,4 +1113,7 @@ p.coming{
     .button-home{ 
         color: #fff;
     }
+    section{
+        padding-top: 20% !important;
+    }
 }
