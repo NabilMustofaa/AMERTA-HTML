@@ -78,52 +78,68 @@ function closeModal(){
 //     },2000)
 // })
 
-let moveForce= 20;
-let rotateForce=20;
+// let moveForce= 20;
+// let rotateForce=20;
 
-$(document).mousemove(function (e) {
+// $(document).mousemove(function (e) {
 
-    let docX = $(document).width();
-    let docY = $(document).height();
-    let moveX = (e.pageX -  docX/2) / (docX/2) * -moveForce;
-    let moveY = (e.pageY - docY/3) / (docY/3) * -moveForce;
-    let moveX1 = moveX + docX * 0.775, 
-    moveX2 = moveX + docX * 0.815,
-    moveX3=moveX+docX*0.555,
-    moveX4=moveX+docX*0.295,
-    moveX5=moveX+docX*0.095,
-    moveX6=moveX+docX*0.0095;
-    let moveY1 = moveY + docY * 0.013, 
-    moveY2 = moveY + docY * 0.007,
-    moveY3=moveY + docY * 0.0167,
-    moveY4=moveY+docY*0.0157,
-    moveY5=moveY+docY*0.0127,
-    moveY6=moveY+docY*0.0187;
+//     let docX = $(document).width();
+//     let docY = $(document).height();
+//     let moveX = (e.pageX -  docX/2) / (docX/2) * -moveForce;
+//     let moveY = (e.pageY - docY/3) / (docY/3) * -moveForce;
+//     let moveX1 = moveX + docX * 0.775, 
+//     moveX2 = moveX + docX * 0.815,
+//     moveX3=moveX+docX*0.555,
+//     moveX4=moveX+docX*0.295,
+//     moveX5=moveX+docX*0.095,
+//     moveX6=moveX+docX*0.0095;
+//     let moveY1 = moveY + docY * 0.013, 
+//     moveY2 = moveY + docY * 0.007,
+//     moveY3=moveY + docY * 0.0167,
+//     moveY4=moveY+docY*0.0157,
+//     moveY5=moveY+docY*0.0127,
+//     moveY6=moveY+docY*0.0187;
 
-    
-
-    $('.awan1')
-        .css('left', moveX1 +'px')
-        .css('top', moveY1 +'px') ;
-    $('.awan2')
-        .css('left', moveX2 +'px')
-        .css('top', moveY2 +'px');
-    $('.awan3')
-       .css('left', moveX3 +'px')
-        .css('top', moveY3 +'px');
-    $('.awan4')
-        .css('left', moveX4 +'px')
-        .css('top', moveY4 +'px') ;
-    $('.awan5')
-        .css('left', moveX5 +'px')
-        .css('top', moveY5 +'px');
-    $('.awan6')
-       .css('left', moveX6 +'px')
-        .css('top', moveY6 +'px');
-
+//     $('.awan1')
+//         .css('left', moveX1 +'px')
+//         .css('top', moveY1 +'px') ;
+//     $('.awan2')
+//         .css('left', moveX2 +'px')
+//         .css('top', moveY2 +'px');
+//     $('.awan3')
+//        .css('left', moveX3 +'px')
+//         .css('top', moveY3 +'px');
+//     $('.awan4')
+//         .css('left', moveX4 +'px')
+//         .css('top', moveY4 +'px') ;
+//     $('.awan5')
+//         .css('left', moveX5 +'px')
+//         .css('top', moveY5 +'px');
+//     $('.awan6')
+//        .css('left', moveX6 +'px')
+//         .css('top', moveY6 +'px');
         
-})
+// })
+window.onload = function(){
+	var wrapper = document.querySelector('#home'),
+			layerOne = document.querySelector('.awan1'),
+			layerTwo = document.querySelector('.awan2'),
+			layerThree = document.querySelector('.awan3'),
+			layerFour = document.querySelector('.awan4');
+            layerFive = document.querySelector('.awan5');
+            layerSix = document.querySelector('.awan6');
 
+	wrapper.addEventListener('mousemove',function(e){
+		var pageX = e.clientX - window.innerWidth/2,
+            pageY = e.clientY - window.innerHeight/2;
+  	layerOne.style.transform = 'translateX(-'+ (5 + pageX/100) + '%) translateY(-' + (5 + pageY/100) + '%) ';
+  	layerTwo.style.transform = 'translateX(-' + (5 + pageX/100) + '%) translateY(-' + (5 + pageY/100) +  '%)';
+  	layerThree.style.transform = 'translateX(-' + (5 + pageX/100) + '%) translateY(-' + (5 + pageY/100) +  '%)';
+  	layerFour.style.transform = 'translateX(-' + (5 + pageX/100) + '%) translateY(-' + (5 + pageY/100) + '%) scaleX(-1)';
+    layerFive.style.transform = 'translateX(-' + (5 + pageX/100) + '%) translateY(-' + (5 + pageY/100) +  '%) scaleX(-1)';
+  	layerSix.style.transform = 'translateX(-' + (5 + pageX/100) + '%) translateY(-' + (5 + pageY/100) + '%) scaleX(-1)';
+	});
+}
 
 
     
