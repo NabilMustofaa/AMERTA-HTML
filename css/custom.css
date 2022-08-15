@@ -1041,7 +1041,9 @@ p.coming{
     .paper-bg{
         padding: 35% 0;
     }
-
+    .top-section{
+        margin:0;
+    }
     
     
 }
