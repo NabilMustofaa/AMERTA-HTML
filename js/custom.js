@@ -121,7 +121,7 @@ function closeModal(){
         
 // })
 window.onload = function(){
-	var wrapper = document.querySelector('#home'),
+	var wrapper = document.querySelector('body'),
 			layerOne = document.querySelector('.awan1'),
 			layerTwo = document.querySelector('.awan2'),
 			layerThree = document.querySelector('.awan3'),
