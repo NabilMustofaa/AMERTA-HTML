@@ -374,15 +374,15 @@ h1,p,h2,body{
 
 .pushmenu .push_nav > li > a > span {
     display: inline-block;
-    font-size:3rem;
+    font-size:1.5rem;
     vertical-align: middle;
     width: 30px;
     -webkit-transition: all linear 300ms;
     transition: all linear 300ms;
     color:#ffff !important;
     opacity: 0.7;
-    margin-right: 20px;
-    margin-top: -12px;
+    margin-right: -2px;
+    margin-top: -15px;
     font-weight: 500;
 }
 
@@ -1012,10 +1012,10 @@ nav.navbar.bootsnav li.dropdown ul li {
         top: 34px !important;
     }
     .pushmenu .push_nav li {
-        font-size: 2.4rem;}
+        font-size: 1.4rem;}
 
     .pushmenu .push_nav > li > a > span{
-        margin-top: -8px;
+        margin-top: -2px;
     }
     .round-nav .header-with-topbar .top-header-area{
         display: none;
