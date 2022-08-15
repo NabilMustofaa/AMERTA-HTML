@@ -78,7 +78,7 @@ function closeModal(){
 //     },2000)
 // })
 
-let moveForce= 10;
+let moveForce= 20;
 let rotateForce=20;
 
 $(document).mousemove(function (e) {
@@ -86,17 +86,42 @@ $(document).mousemove(function (e) {
     let docX = $(document).width();
     let docY = $(document).height();
     let moveX = (e.pageX -  docX/2) / (docX/2) * -moveForce;
-    let moveY = (e.pageY - docY) / (docY/2) * -moveForce;
-    moveX = moveX + docX * 0.775;
-    moveY = moveY + docY * 0.013;
-    let rotateY = (e.pageX / docX * rotateForce * 2) - rotateForce;
-    let rotateX = (e.pageY / docY * rotateForce * 2) - rotateForce;
+    let moveY = (e.pageY - docY/3) / (docY/3) * -moveForce;
+    let moveX1 = moveX + docX * 0.775, 
+    moveX2 = moveX + docX * 0.815,
+    moveX3=moveX+docX*0.555,
+    moveX4=moveX+docX*0.295,
+    moveX5=moveX+docX*0.095,
+    moveX6=moveX+docX*0.0095;
+    let moveY1 = moveY + docY * 0.013, 
+    moveY2 = moveY + docY * 0.007,
+    moveY3=moveY + docY * 0.0167,
+    moveY4=moveY+docY*0.0157,
+    moveY5=moveY+docY*0.0127,
+    moveY6=moveY+docY*0.0187;
+
     
 
     $('.awan1')
-        .css('left', moveX +'px')
-        .css('top', moveY +'px') 
-        .css('transform','rotateX('+rotateX+'deg) rotateY('+ rotateY +'deg)')
+        .css('left', moveX1 +'px')
+        .css('top', moveY1 +'px') ;
+    $('.awan2')
+        .css('left', moveX2 +'px')
+        .css('top', moveY2 +'px');
+    $('.awan3')
+       .css('left', moveX3 +'px')
+        .css('top', moveY3 +'px');
+    $('.awan4')
+        .css('left', moveX4 +'px')
+        .css('top', moveY4 +'px') ;
+    $('.awan5')
+        .css('left', moveX5 +'px')
+        .css('top', moveY5 +'px');
+    $('.awan6')
+       .css('left', moveX6 +'px')
+        .css('top', moveY6 +'px');
+
+        
 })
 
 
