@@ -15,6 +15,7 @@
 }
 body{
     overflow: overlay;
+    overflow-x: hidden;
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),url('../images/pattern.svg');
     background-repeat: repeat;
     
@@ -22,16 +23,77 @@ body{
 section#denah,
 section#penugasan{
     background-image: none;
-    z-index: 2;
 }
+img.awan1{
+    position: absolute;
+    top: calc(45% - 220px);
+    right: calc(17% - 120px);
+    width: 12em;
+    height: 8em;
+    z-index: 1;
 
+}
+img.awan2{
+    position: absolute;
+    top: calc(18% - 3em);
+    right: calc(16% - 6em);
+    width: 6em;
+    height: 3em;
+    z-index: 1;
+    opacity: 0.8;
+    filter: blur(1px);
+    
+}
+img.awan3{
+    position: absolute;
+    top: calc(25% - 2em);
+    right: calc(45% - 4em);
+    width: 4em;
+    height: 2em;
+    z-index: 1;
+    opacity: 0.9;
+    filter: blur(2px);
+}
+img.awan4{
+    position: absolute;
+    top: calc(23% - 2em);
+    left: calc(35% - 4em);
+    width: 4em;
+    height: 2em;
+    z-index: 1;
+    opacity: 0.8;
+    filter: blur(1px);
+}
+img.awan5{
+    position: absolute;
+    top: calc(20% - 2em);
+    left: calc(15% - 4em);
+    width: 6em;
+    height: 3em;
+    z-index: 1;
+    opacity: 0.9;
+    filter: blur(2px);
+}
+img.awan6{
+    position: absolute;
+    top: calc(25% - 2em);
+    left: calc(8% - 4em);
+    width: 12em;
+    height: 8em;
+    z-index: 1;
 
+}
+img.awan1::before,
+img.awan6::before{
+    transform: translateZ(-100px);
+}
 section#home{
     background-color: white;
     background-image: url('../images/bg\ atas\ 3.svg');
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: bottom;
+    z-index: -2;
 }
 
 /*-- Ultility --*/
@@ -236,9 +298,7 @@ section#dibalik .caption-text{
     margin-right: 4rem;
     margin-top: 1rem;
 }
-section#teaser .caption-text{
-    margin: -2rem 13rem 0 7rem;
-}
+
 .caption-text{
     margin-right: 3rem;
     margin-top: -3rem;
@@ -307,13 +367,12 @@ header.sticky nav.navbar .nav-header-container .row .col-md-12 .navbar-collapse 
     background-color: #0C4A83;
     border-radius: 20px;
     transition: transform 0.5s 0.5s cubic-bezier(0, 0, 0.5, 2), width 0.5s 0.5s cubic-bezier(0, 0, 0.5, 2);
-    z-index: 1;
+    z-index: -1;
 }
 .button-home:hover::before{
     width: 100%;
     transform: translateY(-50%)translateX(-20px);
     transition: transform 0.5s 0.5s cubic-bezier(0, 0, 0.5, 2), width 0.5s 0.5s cubic-bezier(0, 0, 0.5, 2);
-    z-index: -1;
     
 }
 
@@ -322,14 +381,14 @@ header.sticky nav.navbar .nav-header-container .row .col-md-12 .navbar-collapse 
     margin-top: 2%;
     transition: transform 0.5s 4s cubic-bezier(0, 0, 0.5, 2);
     color: #fff;
-    z-index: 2;
+    z-index: 99;
 }
 .button-home:hover i{
     transform: translateX(3px);
 }
 .button-home:hover{
     color: #fff;
-    z-index: 3;
+    z-index: 99;
 }
 
 /*-- Card --*/
@@ -753,7 +812,7 @@ footer .wave#wave4{
     z-index:2;
     width: 80px;
     height: 80px;
-    background-color:rgba(255, 255, 255, 0.9) ;
+    background-color:transparent;
     padding: 5px 0;
     border-radius: 3px;
 }
@@ -934,13 +993,13 @@ p.coming{
         left: -20px;
     }
     h1.batik-font.first-letter{
-        font-size: 10rem !important; 
+        font-size: 8rem !important; 
         font-weight: 400 !important;
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         margin-bottom: 8%;
     }
     h1.batik-font.second-letter{
-        font-size: 6rem !important;
+        font-size: 5rem !important;
         font-weight: 400 !important;
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         letter-spacing: 0 !important;
@@ -961,6 +1020,26 @@ p.coming{
     }
     .img-dibalik{
         display: none;
+    }
+    img.awan2{
+        right: calc(8%);
+    }
+    img.awan5{
+        left: calc(8%);
+    }
+    img.awan1,
+    img.awan6{
+        display: none;
+    }
+    .caption-image{
+        transform: scale(0.3);
+        margin: -5rem -12rem 0 -14.5rem;
+    }
+    .caption-image.mirror{
+        transform: scale(0.3) scaleX(-1);
+    }
+    .paper-bg{
+        padding: 35% 0;
     }
 
     
@@ -1021,5 +1100,12 @@ p.coming{
     }
     footer .container .flex{
         flex-direction: column;
+    }
+    .parallax{
+        padding-bottom: 25%;
+    }
+    .parallax iframe{
+        width: 95%;
+        margin: 0 2%;
     }
 }

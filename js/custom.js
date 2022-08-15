@@ -78,7 +78,26 @@ function closeModal(){
 //     },2000)
 // })
 
+let moveForce= 10;
+let rotateForce=20;
 
+$(document).mousemove(function (e) {
+
+    let docX = $(document).width();
+    let docY = $(document).height();
+    let moveX = (e.pageX -  docX/2) / (docX/2) * -moveForce;
+    let moveY = (e.pageY - docY) / (docY/2) * -moveForce;
+    moveX = moveX + docX * 0.775;
+    moveY = moveY + docY * 0.013;
+    let rotateY = (e.pageX / docX * rotateForce * 2) - rotateForce;
+    let rotateX = (e.pageY / docY * rotateForce * 2) - rotateForce;
+    
+
+    $('.awan1')
+        .css('left', moveX +'px')
+        .css('top', moveY +'px') 
+        .css('transform','rotateX('+rotateX+'deg) rotateY('+ rotateY +'deg)')
+})
 
 
 
