@@ -120,26 +120,11 @@ function closeModal(){
 //         .css('top', moveY6 +'px');
         
 // })
-window.onload = function(){
-	var wrapper = document.querySelector('body'),
-			layerOne = document.querySelector('.awan1'),
-			layerTwo = document.querySelector('.awan2'),
-			layerThree = document.querySelector('.awan3'),
-			layerFour = document.querySelector('.awan4');
-            layerFive = document.querySelector('.awan5');
-            layerSix = document.querySelector('.awan6');
 
-	wrapper.addEventListener('mousemove',function(e){
-		var pageX = e.clientX - window.innerWidth/2,
-            pageY = e.clientY - window.innerHeight/2;
-  	layerOne.style.transform = 'translateX(-'+ (5 + pageX/100) + '%) translateY(-' + (5 + pageY/100) + '%) ';
-  	layerTwo.style.transform = 'translateX(-' + (5 + pageX/100) + '%) translateY(-' + (5 + pageY/100) +  '%)';
-  	layerThree.style.transform = 'translateX(-' + (5 + pageX/100) + '%) translateY(-' + (5 + pageY/100) +  '%)';
-  	layerFour.style.transform = 'translateX(-' + (5 + pageX/100) + '%) translateY(-' + (5 + pageY/100) + '%) scaleX(-1)';
-    layerFive.style.transform = 'translateX(-' + (5 + pageX/100) + '%) translateY(-' + (5 + pageY/100) +  '%) scaleX(-1)';
-  	layerSix.style.transform = 'translateX(-' + (5 + pageX/100) + '%) translateY(-' + (5 + pageY/100) + '%) scaleX(-1)';
-	});
-}
+
+
+
+
 
 
     

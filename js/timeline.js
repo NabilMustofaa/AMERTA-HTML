@@ -52,3 +52,4 @@ function scrollHandler(e) {
 scrollHandler();
 line.style.display = 'block';
 window.addEventListener('scroll', scrollHandler);
+
